@@ -1,16 +1,14 @@
 <template>
   <div class="container">
     <div class="home">
-      
+      <!-- <nuxt-link to="/login">登录</nuxt-link> -->
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 export default {
   components: {
-    Logo
   }
 }
 </script>
@@ -27,6 +25,7 @@ export default {
 .home{
   width: 100vw;
   height: 100vh;
-  background: url('~assets/imgs/home_bg.png');
+  background: no-repeat center url('~assets/imgs/home_bg.png');
+  background-size: cover;
 }
 </style>
