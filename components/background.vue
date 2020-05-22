@@ -1,6 +1,9 @@
 <template>
-  <div class="backgroud">
-    <span class="title">{{message}}</span>
+  <div class="comp-backgroud">
+    <slot name="header"></slot>
+    <slot name="main">
+      <span class="title">{{ message }}</span>
+    </slot>
   </div>
 </template>
 
@@ -24,9 +27,11 @@ export default {
   height: 100%;
   background: url('~assets/imgs/home_bg.png');
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   .title {
+    margin: auto 0;
     font-size: 3.5em;
     color: #fff;
     font-weight: 600;

@@ -1,35 +1,41 @@
 <template>
-  <div class="container">
-    <div class="left">欢迎进入登录页面</div>
-    <div class="right">
-      <backgroud/>
+  <div class="page">
+    <div class="login-wrapper">
+      <login/>
     </div>
+    <background>
+    </background>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 export default {
+  name: 'login',
   components: {
-    backgroud: () => import('../components/backgroud')
+    background: () => import('../components/background.vue'),
+    login: () => import('../components/login-comp.vue')
   }
 }
 </script>
 
-<style lang="less">
-.container {
+<style lang="less" scoped>
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.page {
   margin: 0 auto;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  .left{
-  width: 30vw;
-}
-  .right{
-    width: 70vw;
-    height: 100vh;
+  .login-wrapper{
+    width: 38vw;
   }
 }
 </style>
