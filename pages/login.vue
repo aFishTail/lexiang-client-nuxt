@@ -1,6 +1,9 @@
 <template>
   <div class="container">
-    <p>欢迎进入登录页面</p>
+    <div class="left">欢迎进入登录页面</div>
+    <div class="right">
+      <backgroud/>
+    </div>
   </div>
 </template>
 
@@ -8,23 +11,25 @@
 import Logo from '~/components/Logo.vue'
 export default {
   components: {
-    Logo
+    backgroud: () => import('../components/backgroud')
   }
 }
 </script>
 
-<style>
+<style lang="less">
 .container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
+  .left{
+  width: 30vw;
 }
-.home{
-  width: 100vw;
-  height: 100vh;
-  background: url('~assets/imgs/home_bg.png');
+  .right{
+    width: 70vw;
+    height: 100vh;
+  }
 }
 </style>
