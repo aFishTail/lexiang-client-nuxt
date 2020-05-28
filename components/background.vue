@@ -31,7 +31,7 @@ export default {
   align-items: center;
   // justify-content: center;
   .title {
-    margin: auto 0;
+    margin: 240px 0;
     font-size: 3.5em;
     color: #fff;
     font-weight: 600;

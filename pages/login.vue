@@ -1,7 +1,8 @@
 <template>
   <div class="page">
     <div class="login-wrapper">
-      <login/>
+      ddd
+      <loginComp/>
     </div>
     <background>
     </background>
@@ -13,7 +14,7 @@ export default {
   name: 'login',
   components: {
     background: () => import('../components/background.vue'),
-    login: () => import('../components/login-comp.vue')
+    loginComp: () => import('../components/login-comp.vue')
   }
 }
 </script>
