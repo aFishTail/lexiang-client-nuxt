@@ -22,7 +22,7 @@ export default {
 </style>
 
 <style lang="less" scoped>
-.backgroud {
+.comp-backgroud {
   width: 100%;
   height: 100%;
   background: url('~assets/imgs/home_bg.png');
